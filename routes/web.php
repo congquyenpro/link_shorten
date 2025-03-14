@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('/')->group(function () {
+    Route::get('/', 'DisplayController@displayHome')->name('customer.home');
+
+    /* Process Url */
+    Route::post('/shorten', 'UrlShortenerController@store')->name('shorten.url');
+    Route::get('/{code}', 'UrlShortenerController@redirect')->name('shortened.redirect');
 });

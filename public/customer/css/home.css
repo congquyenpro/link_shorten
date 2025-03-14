@@ -1,0 +1,37 @@
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-custom {
+    background: #ff6b81;
+    border: none;
+    font-weight: bold;
+}
+.btn-custom:hover {
+    background: #ff4757;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(10px);
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #ffd32a !important;
+}
